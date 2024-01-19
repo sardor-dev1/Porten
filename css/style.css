@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+
+@media (min-width: 1440px) {
+    .container {
+        width: 80%;
+    }   
+}
+
+/* -------------------- Header ------------- */
+header {
+    background-color: black;
+    position: fixed;
+    width: 100%;
+}
+
+
+.nav__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0 16px 0;
+    border-bottom: #fff solid 1.5px ;
+}
+
+.nav__top__left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    
+}
+
+.nav__top__link {
+    color: var(--gray, #969696);
+    text-align: right;
+    font-family: "PT Sans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.nav__top__right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0 30px 0;
+}
+
+.nav__bottom__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.bottom__list__icons {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding-left: 40px;
+}
+
+.nav__bottom__link {
+    color: #FFF;
+    font-family: "PT Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.font__ave {
+    color: #fff;
+    display: none;
+}
+
+@media (max-width: 750px) {
+    .bottom__item {
+        display: none;
+    }
+
+    .font__ave {
+        display: block;
+        font-size: 25px;
+    }
+    .nav__top__link {
+        display: none;
+    }
+}
+
+/* ------------------ Header End --------- */
+
+/* ------------------ Hero section ------- */
+.hero {
+    background-color: black;
+    background-image: url(../images/hero/Rectangle\ 3.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top:310px;
+}
+
+.hero__section {
+    /* margin-bottom: 150px; */
+}
+
+.hero__card {
+    width: 320px;
+    height: 320px;
+    border: solid #FFF 2px;
+    text-align: center;
+    padding-top: 94px;
+    margin: 0 auto;
+}
+
+.hero__card__img {
+    border-bottom: solid #FFF 2px ;
+    padding-bottom: 10px;
+}
+
+
+.hero__text {
+    color: #FFF;
+    font-family: "PT Sans";
+    font-size: 22px;
+    text-transform: uppercase;
+    width: 210px;
+    margin: 0 auto;
+    
+}
+
+.hero__section__text {
+    color: #FFF;
+    font-family: "PT Sans";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    text-transform: uppercase;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 730px;
+    padding-top: 80px;
+    /* padding-bottom: 150px; */
+}
+/* -------------------- Hero End ----------------- */
+
+/* -------------------- About start */
+.about {
+    background-color: black;
+    padding: 15px;
+}
+
+.about__wrapp {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about__left {
+    width: 50%;
+    background-color: black;
+}
+
+.about__left__tittle {
+    color: var(--white, #FFF);
+    text-align: center;
+    font-family: "Playfair Display";
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 93px;
+    padding-bottom: 50px;
+    width: 20%;
+    margin: 0 auto;
+    border-bottom: solid #FFF 2px;
+    margin-bottom: 50px;
+}
+
+.about__card {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.about__hour-card {
+    background: #191B1C;
+    text-align: center;
+    padding-top: 6%;
+    width: 30%;
+}
+
+.about__hour {
+    text-align: center;
+}
+
+.hour__bkg {
+}
+
+.about__hour-card__tittle {
+    color: var(--white, #FFF);
+    font-family: "Playfair Display";
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.about__hour-card {
+    color: var(--light-gray, #D0D0D0);
+    font-family: "Playfair Display";
+    font-size: 16px;
+    font-weight: 700;
+    padding-bottom: 6%;
+}
+
+
+.about__right {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../images/about/Rectangle\ 8.svg);
+    width: 50%;
+}
+
+.about__right__tittle {
+    color: var(--white, #FFF);
+    text-align: center;
+    font-family: "Playfair Display";
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-top: 448px;
+}
+
+.about__right__btn {
+    padding: 12px 28px;
+    background-color: red;
+}
+
+@media (min-width: 1440px) {
+    .about__wrapp {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
